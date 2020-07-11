@@ -1,0 +1,316 @@
+<!doctype html>
+<!--
+Macro molicuals virtual lab
+Date: 3 July 2020
+Author: Mark Bromwich and Steven Pennington
+
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="Biology Lab Project">
+  <meta name="author" content="Mark Bromwich and Steven Pennington">
+  
+  <script src="js/jquery_3_5_1.js"></script>  
+  <script src="js/jquery_ui.js"></script> 
+  <script src="js/carbohydrates_script.js"></script>
+  <script src="js/proteins_script.js"></script>
+  <script src="js/lipids_script.js"></script>
+  <script src="js/everyday_foods_script.js"></script>
+  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/jquery_ui.css">
+  <link rel="stylesheet" href="css/main_styles.css">
+  
+<script>
+//Runs the overall tabs section (division)
+$(function() {
+  
+    //This manages the various functions within the tabs section//
+    $( "#tabs" ).tabs({
+    	//Nothing goes here, unless you want to change the way the tabs function
+    });
+});
+</script>
+
+</head>
+
+<body>
+
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Carbohydrates</a></li>
+    <li><a href="#tabs-2">Proteins</a></li>
+    <li><a href="#tabs-3">Lipids</a></li>
+    <li><a href="#tabs-4">Everyday Foods</a></li>
+  </ul>
+  <div id="tabs-1">
+  	<div class="panel_one_left">
+  	
+    	<p>Carbohydrates consist of simple sugars and more complex chains of sugars called polysaccharides. Examples of sugars are glucose, sucrose, maltose, etc. Polysaccharides include storage carbohydrates such as plant and animal starches, and structural carbohydrates like cellulose (plant fiber) and chitin (insect skeletons).</p>
+
+		<h4>Test for Sugars:</h4> 
+		<p>One means of testing for sugars is the Benedicts Reagent test. The Benedict's Reagent changes color after heating in the presence of reducing sugars.</p>
+
+		<h4>Test for Starches: </h4>
+		<p>Iodine (Lugol's) can be used to determine the presence or absence of starches. A color change from yellow or brown to a blue-black color indicates that starch is present.</p>
+
+  	</div>
+  	<div class="panel_one_right">
+  		<div>
+  		<h3>Choose your test &nbsp;&nbsp; 
+  			<select id="select_test">
+  				<option value="sugars">Test for Sugars</option>
+  				<option value="starches">Test for Starches</option>
+  			</select>
+  		</h3>
+  		</div>
+  		<div id="sugars" class="sugars">
+  			<table>
+  				<tr>
+  					<td colspan="5"><img src="images/test_tubes_one.png" id="panel_one_pic_one" alt="test_tube"></td>
+  				</tr>
+  				<tr>
+  					<td>Water</td>
+  					<td>Glucose</td>
+  					<td><br>Onion<br>Juice</td>
+  					<td><br>Potato<br>Juice</td>
+  					<td><br>Diet<br>Sprite</td>
+  					
+  				</tr>
+  				<tr>
+  					<td colspan="5">
+  						<button id="panel_one_button_one">Add Benedict's Reagent</button>
+  					</td>
+  				</tr>
+  				<tr>
+  					<td colspan="5">
+  						<button id="panel_one_button_two">Hot Water Bath</button>
+  					</td>
+  				</tr>
+  			</table>
+  		</div>
+  		<div id="starches" class="starches">
+  			<table>
+  				<tr>
+  					<td colspan="5"><img src="images/test_tubes_one.png" id="panel_one_pic_two" alt="test_tube"></td>
+  				</tr>
+  				<tr>
+  					<td>Water</td>
+  					<td>Glucose</td>
+  					<td><br>Onion<br>Juice</td>
+  					<td><br>Potato<br>Juice</td>
+  					<td><br>Diet<br>Sprite</td>
+  					
+  				</tr>
+  				<tr>
+  					<td colspan="5">
+  						<button id="panel_one_button_three">Add Iodine</button>
+  					</td>
+  				</tr>
+  			</table>
+  		</div>
+  		<div>
+  			<button id="panel_one_reset_button">Reset Experiment</button>
+  		</div>
+  	</div>
+  	<!-- Float Clear-->
+  	<div class="float_clear">&nbsp;</div>
+  </div>
+  <div id="tabs-2">
+	<div class="panel_two_left">
+		<p>Proteins are chains of amino acids (twenty different amino acids occur in living things), which function structurally (e.g. cell membrane) or enzymatically (an enzyme is a chemical that "makes" something happen).</p>
+		
+		<h4>Test for Proteins: </h4>
+		<p>We will be using Biuret Reagent to test for the presence of proteins. When using the Biuret Reagent, a change from blue to violet means proteins are present.</p>
+	</div>
+	<div class="panel_two_right">
+		<div id="protein" class = "protein">
+			<table>
+				<tr>
+					<td colspan="4"><img src="images/protein_test_tube_one.png" id="panel_two_pic_one" alt="test_tube"></td>
+				</tr>
+				<tr>
+					<td>Water</td>
+					<td><br>Egg<br>White</td>
+					<td><br>Chicken<br>Soup</td>
+					<td><br>Diet<br>Sprite</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						<button id="panel_two_button">Add Biuret Reagent</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<button id="panel_two_reset_button">Reset Experiment</button>
+		</div>
+	</div>
+	<!-- Float Clear-->
+  	<div class="float_clear">&nbsp;</div>
+  </div>
+  <div id="tabs-3">
+	<div class="panel_three_left">
+		<p>Lipids include such subcategories as fats and steroids. Some fats are solid at room temperature (e.g. lard), others are liquid (e.g. corn oil). One of the better known steroids is cholesterol.</p>
+
+		<h4>Test for Lipids: </h4>
+		<p>Another indicator - Sudan III - will be used in this test. As fat content increases, the intensity of the dye (Sudan III) also increases - a vivid orange color should appear. </p>
+	</div>
+	<div class="panel_three_right">
+		<div id="lipids" class = "lipids">
+			<table>
+				<tr>
+					<td colspan="1"><img src="images/lipids_plate_one.png" id="panel_three_pic_one" alt="plate"></td>
+				</tr>
+				<tr>
+					<td colspan="1">
+						<button id="panel_three_button">Add Sudan III</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<button id="panel_three_reset_button">Reset Experiment</button>
+		</div>
+	</div>
+  	<!-- Float Clear-->
+  	<div class="float_clear">&nbsp;</div>
+  </div>
+  <div id="tabs-4">
+	<div class="panel_four_left">
+		<h4>Testing Chemical Composition of Everyday Foods: </h4>
+		<p>There are several everyday foods represented at the right. Using the lab tests for carbohydrates, proteins, and lipids, determine which of the organic compounds are present in the food samples.</p>
+	</div>
+	<div class="panel_four_right">
+		<div>
+			<h3>Choose your test &nbsp;&nbsp; 
+				<select id="select_test_panel_four">
+					<option value="gelatin">Test for Gelatin</option>
+					<option value="apple_juice">Test for Apple Juice</option>
+					<option value="ritz_cracker">Test for Ritz Cracker</option>
+					<option value="skim_milk">Test for Skim Milk</option>
+				</select>
+			</h3>
+		</div>
+		<div id="gelatin" class="gelatin">
+			<table>
+				<tr>
+					<td colspan="1">
+						<img src="images/test_tube_gen.png" id="panel_four_pic_one" alt="test_tube">
+					</td>
+					<td colspan="1">
+						<img src="images/test_tube_gen.png" id="panel_four_pic_two" alt="test_tube">
+					</td>
+					<td colspan="1">
+						<img src="images/test_tube_gen.png" id="panel_four_pic_three" alt="test_tube">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<button id="panel_four_button_one">Add Benedict's<br>Reagent</button>
+						<button id="panel_four_button_three">Add Iodine</button>
+						<button id="panel_four_button_four">HoAdd Biuret Reagent</button>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<button id="panel_four_button_two">Hot Water Bath</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="apple_juice" class="apple_juice">
+			<table>
+				<tr>
+					<td colspan="1">
+						<img src="images/test_tube_gen.png" id="panel_four_pic_four" alt="test_tube">
+					</td>
+					<td colspan="1">
+						<img src="images/test_tube_gen.png" id="panel_four_pic_five" alt="test_tube">
+					</td>
+					<td colspan="1">
+						<img src="images/test_tube_gen.png" id="panel_four_pic_six" alt="test_tube">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<button id="panel_four_button_five">Add Benedict's<br>Reagent</button>
+						<button id="panel_four_button_seven">Add Iodine</button>
+						<button id="panel_four_button_eight">HoAdd Biuret Reagent</button>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<button id="panel_four_button_six">Hot Water Bath</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="ritz_cracker" class="ritz_cracker">
+			<table>
+				<tr>
+					<td colspan="1">
+						<img src="images/test_tube_gen.png" id="panel_four_pic_seven" alt="test_tube">
+					</td>
+					<td colspan="1">
+						<img src="images/test_tube_gen.png" id="panel_four_pic_eight" alt="test_tube">
+					</td>
+					<td colspan="1">
+						<img src="images/test_tube_gen.png" id="panel_four_pic_nine" alt="test_tube">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<button id="panel_four_button_nine">Add Benedict's<br>Reagent</button>
+						<button id="panel_four_button_eleven">Add Iodine</button>
+						<button id="panel_four_button_twelve">HoAdd Biuret Reagent</button>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<button id="panel_four_button_ten">Hot Water Bath</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="skim_milk" class="skim_milk">
+			<table>
+				<tr>
+					<td colspan="1">
+						<img src="images/test_tube_gen.png" id="panel_four_pic_ten" alt="test_tube">
+					</td>
+					<td colspan="1">
+						<img src="images/test_tube_gen.png" id="panel_four_pic_eleven" alt="test_tube">
+					</td>
+					<td colspan="1">
+						<img src="images/test_tube_gen.png" id="panel_four_pic_twelve" alt="test_tube">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<button id="panel_four_button_thirteen">Add Benedict's<br>Reagent</button>
+						<button id="panel_four_button_fifteen">Add Iodine</button>
+						<button id="panel_four_button_sixteen">HoAdd Biuret Reagent</button>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<button id="panel_four_button_fourteen">Hot Water Bath</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<button id="panel_four_reset_button">Reset Experiment</button>
+		</div>
+	</div>
+  	<!-- Float Clear-->
+  	<div class="float_clear">&nbsp;</div>
+  </div>
+</div> 
+
+</body>
+</html>

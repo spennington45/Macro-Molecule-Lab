@@ -1,0 +1,401 @@
+/* CSS Main Style Sheet for the Macro molicules lab */
+/* Author Mark Bromwich and Steven Pennington      Date 3 July 2020  */
+
+
+* {
+
+	font-family: helvetica;
+	font-size: 1em;
+
+}
+
+body {
+	margin: 30px 0px;
+	
+}
+
+#tabs {
+	width: 900px;
+	margin: 0px auto;
+	background-color: #cfcfcf;
+	border: 1px solid #000;
+	outline: none;
+}
+
+.ui-tabs-active a:link {
+	background-color: #fff;
+	background: #cfcfcf;
+	color: #000;
+} 
+
+
+/* will format panels overall styles */
+#tabs-1, #tabs-2, #tabs-3, #tabs-4 {
+
+}
+
+
+/* Panel one's two divisions */
+
+.panel_one_left {
+	width: 30%;
+	float: left;
+
+	
+}
+
+.panel_one_right {
+	width: 68%;
+	float: right;
+
+}
+
+.panel_one_right h3 {
+	text-align: center;
+}
+
+
+/* Sugars Expriment Division Styles */
+
+.sugars table {
+	margin: 30px auto;
+	text-align: center;
+	padding: 10px;
+	background-color: #fff;
+}
+
+.sugars table td {
+	padding: 10px;
+}
+.sugars #panel_one_button_one {
+	height: 50px;
+	width: 300px;
+	padding: 10px;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+.sugars #panel_one_button_two {
+	height: 50px;
+	width: 300px;
+	padding: 5px;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+
+/* End sugars Expriment Division Styles */
+
+
+/* Start Starches Expriment Division Styles */
+.starches table {
+	margin: 30px auto;
+	text-align: center;
+	padding: 10px;
+	background-color: #fff;
+}
+
+.starches table td {
+	padding: 10px;
+}
+.starches #panel_one_button_three {
+	height: 50px;
+	width: 300px;
+	padding: 10px;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+
+/* End Starches Expriment Division Styles */
+
+
+/* Panel two's two divisions */
+
+.panel_two_left {
+	width: 30%;
+	float: left;
+
+}
+
+.panel_two_right {
+	width: 68%;
+	float: right;
+
+}
+
+.protein table {
+	margin: 30px auto;
+	text-align: center;
+	padding: 10px;
+	background-color: #fff;
+}
+
+.protein #panel_two_button {
+	height: 50px;
+	width: 300px;
+	padding: 10px;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+	margin-top: 15px;
+}
+
+/* End proteins Expriment Division Styles */
+
+/* Panel three's two divisions */
+
+.panel_three_left {
+	width: 30%;
+	float: left;
+
+}
+
+.panel_three_right {
+	width: 68%;
+	float: right;
+
+}
+
+.lipids table {
+	margin: 30px auto;
+	text-align: center;
+	padding: 10px;
+	background-color: #fff;
+}
+
+.lipids #panel_three_button {
+	height: 50px;
+	width: 300px;
+	padding: 10px;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+	margin-top: 15px;
+}
+
+/* End lipids Expriment Division Styles */
+
+/* Panel four's two divisions */
+
+.panel_four_left {
+	width: 30%;
+	float: left;
+
+	
+}
+
+.panel_four_right {
+	width: 68%;
+	float: right;
+
+}
+
+.panel_four_right h3 {
+	text-align: center;
+}
+
+
+/* Gelatin Expriment Division Styles */
+
+.gelatin table {
+	margin: 30px auto;
+	text-align: center;
+	padding: 10px;
+	background-color: #fff;
+}
+
+.gelatin table td {
+	padding: 10px;
+	
+}
+.gelatin #panel_four_button_one {
+	height: 75px;
+	width: 150px;
+	padding: 10px;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+.gelatin #panel_four_button_two {
+	height: 75px;
+	width: 150px;
+	padding: 10px;
+	float: left;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+.gelatin #panel_four_button_three {
+	height: 75px;
+	width: 150px;
+	padding: 10px;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+.gelatin #panel_four_button_four {
+	height: 75px;
+	width: 150px;
+	padding: 10px;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+
+/* End gelatin Expriment Division Styles */
+/* Start Apple Juice Expriment Division Styles */
+
+.apple_juice table {
+	margin: 30px auto;
+	text-align: center;
+	padding: 10px;
+	background-color: #fff;
+}
+
+.apple_juice table td {
+	padding: 10px;
+}
+.apple_juice #panel_four_button_five {
+	height: 75px;
+	width: 150px;
+	padding: 10px;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+.apple_juice #panel_four_button_six {
+	height: 75px;
+	width: 150px;
+	padding: 10px;
+	float: left;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+.apple_juice #panel_four_button_seven {
+	height: 75px;
+	width: 150px;
+	padding: 10px;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+.apple_juice #panel_four_button_eight {
+	height: 75px;
+	width: 150px;
+	padding: 10px;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+
+/* End apple_juice Expriment Division Styles */
+/* Start Ritz Cracker Expriment Division Styles */
+
+.ritz_cracker table {
+	margin: 30px auto;
+	text-align: center;
+	padding: 10px;
+	background-color: #fff;
+}
+
+.ritz_cracker table td {
+	padding: 10px;
+}
+.ritz_cracker #panel_four_button_nine {
+	height: 75px;
+	width: 150px;
+	padding: 10px;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+.ritz_cracker #panel_four_button_ten {
+	height: 75px;
+	width: 150px;
+	padding: 10px;
+	float: left;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+.ritz_cracker #panel_four_button_eleven {
+	height: 75px;
+	width: 150px;
+	padding: 10px;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+.ritz_cracker #panel_four_button_twelve {
+	height: 75px;
+	width: 150px;
+	padding: 10px;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+
+/* End ritz_cracker Expriment Division Styles */
+/* Start Skim Milk Expriment Division Styles */
+
+.skim_milk table {
+	margin: 30px auto;
+	text-align: center;
+	padding: 10px;
+	background-color: #fff;
+}
+
+.skim_milk table td {
+	padding: 10px;
+}
+.skim_milk #panel_four_button_thirteen {
+	height: 75px;
+	width: 150px;
+	padding: 10px;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+.skim_milk #panel_four_button_fourteen {
+	height: 75px;
+	width: 150px;
+	padding: 10px;
+	float: left;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+.skim_milk #panel_four_button_fifteen {
+	height: 75px;
+	width: 150px;
+	padding: 10px;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+.skim_milk #panel_four_button_sixteen {
+	height: 75px;
+	width: 150px;
+	padding: 10px;
+	font-size: 18px;
+	background-color: yellow;
+	text-align: center;
+}
+/* End skim_milk Expriment Division Styles */
+
+
+
+
+
+
+.float_clear {
+	clear: both;
+}
+
+
+
+
+
+
